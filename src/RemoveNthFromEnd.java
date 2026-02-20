@@ -1,3 +1,5 @@
+import ListNodePublicClass.ListNode;
+
 public class RemoveNthFromEnd {
 
     public static void main(String[] args) {

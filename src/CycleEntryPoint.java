@@ -1,11 +1,5 @@
-//public class ListNode{
-//    int val ;
-//    ListNode next;
-//    ListNode(int val){
-//        this.val = val ;
-//        this.next = null;
-//    }
-//}
+
+import ListNodePublicClass.ListNode;
 
 public class CycleEntryPoint {
     public static void main(String[] args) {

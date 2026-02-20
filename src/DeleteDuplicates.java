@@ -1,3 +1,5 @@
+import ListNodePublicClass.ListNode;
+
 public class DeleteDuplicates {
 
     public static void main(String[] args) {
