@@ -4,6 +4,14 @@ public class AddTwoNumbers {
 
     public static void main(String[] args) {
 
+        // First number: 342 represented as 2 -> 4 -> 3
+        ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
+        // Second number: 465 represented as 5 -> 6 -> 4
+        ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
+        AddTwoNumbers solution = new AddTwoNumbers();
+        ListNode result = solution.addTwoNumbers(l1, l2); // Expected output: 807 represented as 7 -> 0 -> 8
+        System.out.print("Result: ");
+        printList(result);
     }
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
@@ -36,4 +44,16 @@ public class AddTwoNumbers {
 
         return result.next;
     }
+
+    public static void printList(ListNode head) {
+        ListNode curr = head;
+        while (curr != null) {
+            System.out.print(curr.val + " -> ");
+            curr = curr.next;
+        }
+        System.out.println("null");
+    }
+
 }
+
+// Question Link -> https://leetcode.com/problems/add-two-numbers?envType=problem-list-v2&envId=linked-list
